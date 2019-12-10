@@ -1,6 +1,6 @@
 # Smart-Calculator
 English Version :
-In this project we will create a smart step-by-step calculator.
+In this project we will create a Smart Calculator step-by-step.
 We will use the Strategy Design Pattern throughout this project.
 This file will be filled in as the project progresses.
 ---
