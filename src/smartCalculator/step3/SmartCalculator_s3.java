@@ -56,7 +56,7 @@ class Addition implements SmartCalculator{
                 sum = sum + Integer.parseInt(value);
             }
             System.out.println(sum);
-
+            sum = 0; // after printing the sum, the value is re-initialize at 0.
         } while (!isAurevoir);
     }
 }
