@@ -9,6 +9,11 @@ This file will be filled in as the project progresses.
  * same line and prints their sum in the standard output.
  * Numbers can be positive, negative, or zero.
 
+ * Description - Step 2:
+ * Write a program that reads two numbers in a loop and prints the sum in the standard output.
+ * If a user enters only a single number, the program should print the same number.
+ * If a user enters an empty line, the program should ignore it.
+
 ---
 French Version :
 Dans ce projet nous allons creer une calculatrice intelligente étape par étape.
@@ -19,3 +24,8 @@ Ce fichier sera rempli au fur et à mesure de l'évolution du projet.
 * Écrivez un programme qui lit deux nombres entiers dans le
 * même ligne et imprime leur somme dans la sortie standard.
 * Les nombres peuvent être positifs, négatifs ou nuls.
+
+* Description - Étape 2:
+* Écrivez un programme qui lit deux nombres en boucle et imprime la somme dans la sortie standard.
+* Si un utilisateur saisit un seul numéro, le programme doit imprimer le même numéro.
+* Si un utilisateur entre une ligne vide, le programme doit l'ignorer.
