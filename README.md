@@ -16,7 +16,6 @@ This file will be filled in as the project progresses.
  * If a user enters an empty line, the program should ignore it.
 
  * Description - Step 3:
- * Description
  * At this stage, the program should read an unlimited sequence of numbers from
  * the standard input and calculate their sum. Also, add a /help command
  * to print some information about the program.
@@ -39,7 +38,6 @@ Ce fichier sera rempli au fur et à mesure de l'évolution du projet.
 
 
 * Description - Étape 3:
-* La description
 * À ce stade, le programme devrait lire une séquence illimitée de nombres
 * l'entrée standard et calculer leur somme. Ajoutez également une commande / help
 * pour imprimer des informations sur le programme.

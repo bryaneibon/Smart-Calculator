@@ -7,7 +7,6 @@ import java.util.Scanner;
  * easier to add new features for the next steps, without having to change the logic.
  *
  * Description - Step 3:
- * Description
  * At this stage, the program should read an unlimited sequence of numbers from
  * the standard input and calculate their sum. Also, add a /help command
  * to print some information about the program.
