@@ -51,12 +51,17 @@ class Addition implements SmartCalculator{
             }
             array = userInput.split(" ");
 
-            //Sum calculation...
-            for (String value: array) {
-                sum = sum + Integer.parseInt(value);
+            try {
+                //Sum calculation...
+                for (String value: array) {
+                    sum = sum + Integer.parseInt(value);
+                }
+                System.out.println(sum);
+            } catch (NumberFormatException ignored) {
+            } finally {
+                sum = 0; // after printing the sum, the value is re-initialize at 0.
             }
-            System.out.println(sum);
-            sum = 0; // after printing the sum, the value is re-initialize at 0.
+
         } while (!isAurevoir);
     }
 }
