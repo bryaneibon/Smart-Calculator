@@ -6,17 +6,26 @@ import java.util.Scanner;
  * In this Project, we'll use the Strategy Design Pattern because it will be
  * easier to add new features for the next steps, without having to change the logic.
  *
- * Description - Step 1:
- * Write a program that reads two integer numbers from the
- * same line and prints their sum in the standard output.
- * Numbers can be positive, negative, or zero.
+ * Description - Step 3:
+ * Description
+ * At this stage, the program should read an unlimited sequence of numbers from
+ * the standard input and calculate their sum. Also, add a /help command
+ * to print some information about the program.
  *
  * Input/Output example
  * The example below shows input and the corresponding output.
  * Your program should work in the same way.
  *
- * 5 8
- * 13
+ * 4 5 -2 3
+ * 10
+ * 4 7
+ * 11
+ * 6
+ * 6
+ * /help
+ * The program calculates the sum of numbers
+ * /exit
+ * Bye!
  */
 
 interface SmartCalculator {
