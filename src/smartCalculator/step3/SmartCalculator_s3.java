@@ -1,5 +1,4 @@
 package smartCalculator.step3;
-
 import java.util.Scanner;
 
 /**
@@ -28,49 +27,37 @@ import java.util.Scanner;
  */
 
 interface SmartCalculator {
-    void addition();
+    void addition(String [] array);
 }
 
 class Addition implements SmartCalculator{
     private Scanner scanner = new Scanner(System.in);
 
     @Override
-    public void addition() {
-        int i = 0;
+    public void addition(String [] array) {
         int sum = 0;
-
         boolean isAurevoir = false;
-        boolean askForHelp = false;
-        int [] myArray = null;
 
-        while(!isAurevoir){
-            do {
+        do {
+            String userInput = scanner.nextLine();
 
-                String userInput = scanner.next();
-                if (userInput.equals("/exit")){
-                    GeneralTasks.bye();
-                    isAurevoir = true;
-                    break;
-                }
-
-                if (userInput.equals("/help")){
-                    GeneralTasks.help();
-                    askForHelp = true;
-                    break;
-                }
-                myArray = new int[userInput.length()];
-                int arrayValues = Integer.parseInt(userInput);
-                myArray[i] = arrayValues;
-                i+=1;
-
-            } while (!isAurevoir);
+            if (userInput.equals("/exit")){
+                GeneralTasks.bye();
+                isAurevoir = true;
+                break;
+            } else if (userInput.equals("/help")){
+                GeneralTasks.help();
+                continue;
+            }
+            array = userInput.split(" ");
 
             //Sum calculation...
-            for (int value: myArray) {
-                sum = sum + value;
+            for (String value: array) {
+                sum = sum + Integer.parseInt(value);
             }
             System.out.println(sum);
-        }
+
+        } while (!isAurevoir);
     }
 }
 
@@ -80,8 +67,8 @@ class SmartCalculatorContext {
         this.smartCalculator = smartCalculator;
     }
 
-    void addition() {
-        this.smartCalculator.addition();
+    void addition(String [] array) {
+        this.smartCalculator.addition(array);
     }
 }
 
@@ -98,8 +85,9 @@ class GeneralTasks {
 class Main{
     public static void main(String[] args) {
         SmartCalculatorContext calculMethod = new SmartCalculatorContext();
+        String [] myArray = null;
         // set a concrete calculation method
         calculMethod.setCalculationMethod(new Addition());
-        calculMethod.addition();
+        calculMethod.addition(myArray);
     }
 }
