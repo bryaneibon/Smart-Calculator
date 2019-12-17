@@ -23,10 +23,10 @@ This file will be filled in as the project progresses.
  If the user has entered several operators following each other, the program still should work (like Java or Python REPL).
  Consider that the even number of minuses gives a plus, and the odd number of minuses gives a minus! Look at it this way: 2 -- 2 equals 2 - (-2) equals 2 + 2.
 
----
+=======
+
 French Version :
-Dans ce projet nous allons creer une calculatrice intelligente étape par étape.
-Nous utiliserons le Pattern de design Strategy tout au long de ce projet.
+Dans ce projet nous allons creer une calculatrice intelligente étape par étape. Nous utiliserons le Pattern de design Strategy tout au long de ce projet.
 Ce fichier sera rempli au fur et à mesure de l'évolution du projet.
 
 * Description - Étape 1:
