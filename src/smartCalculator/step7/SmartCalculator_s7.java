@@ -7,145 +7,37 @@ import java.util.regex.Pattern;
 /**
  * In this Project, we'll use the Strategy Design Pattern because it will be
  * easier to add new features for the next steps, without having to change the logic.
- * <p>
- * Description - Step #6: Variables.
- * At this stage, your program should support variables.
- * We suppose that the name of a variable (identifier) can contain only Latin letters.
- * The case is also important; for example, n is not the same as N.
- * The value can be an integer number or a value of another variable.
- * <p>
- * Use Map to support variables.
- * The assignment statement may look like the following:
- * n = 3
- * m=4
- * a  =   5
- * b = a
- * <p>
- * A variable can have a name consisting of more than one letter.
- * count = 10
- * <p>
- * To print the value of a variable you should just type its name.
- * N = 5
- * N
- * 5
- * <p>
- * It should be possible to set a new value to an existing variable.
- * a = 1
- * a = 2
- * a = 3
- * a
- * 3
- * <p>
- * If an identifier or value of a variable is invalid, the program must print a message like the one below.
- * a1 = 8
- * Invalid identifier
- * n = a2a
- * Invalid assignment
- * a = 7 = 8
- * Invalid assignment
- * <p>
- * If a variable is not declared yet, the program should print "Unknown variable".
- * <p>
- * a = 8
- * b = c
- * Unknown variable
- * e
- * Unknown variable
- * <p>
- * Handle as many incorrect inputs as possible. The program must never throw the NumberFormatException or any other exception.
- * It is important to note, all variables must store their values between calculations of different expressions.
- * <p>
+ *
+ * Description - Step #7: Variables.
+ *
  * Input/Output example
- * a = 3
- * b = 4
- * c = 5
- * a + b - c
- * 2
- * b - c + 4 - a
- * 0
- * a = 800
- * a + b + c
- * 809
- * BIG = 9000
- * BIG
- * 9000
- * big
- * Unknown variable
- * /exit
- * Bye!
- * The program should not stop until the user enters the /exit command.
- */
-
-/**
- * In this Project, we'll use the Strategy Design Pattern because it will be
- * easier to add new features for the next steps, without having to change the logic.
- * <p>
- * Description - Step #6: Variables.
- * At this stage, your program should support variables.
- * We suppose that the name of a variable (identifier) can contain only Latin letters.
- * The case is also important; for example, n is not the same as N.
- * The value can be an integer number or a value of another variable.
- * <p>
- * Use Map to support variables.
- * The assignment statement may look like the following:
- * n = 3
- * m=4
- * a  =   5
- * b = a
- * <p>
- * A variable can have a name consisting of more than one letter.
- * count = 10
- * <p>
- * To print the value of a variable you should just type its name.
- * N = 5
- * N
- * 5
- * <p>
- * It should be possible to set a new value to an existing variable.
- * a = 1
- * a = 2
- * a = 3
- * a
+ * 8 * 3 + 12 * (4 - 2)
+ * 48
+ * 2 - 2 + 3
  * 3
- * <p>
- * If an identifier or value of a variable is invalid, the program must print a message like the one below.
- * a1 = 8
- * Invalid identifier
- * n = a2a
- * Invalid assignment
- * a = 7 = 8
- * Invalid assignment
- * <p>
- * If a variable is not declared yet, the program should print "Unknown variable".
- * <p>
- * a = 8
- * b = c
- * Unknown variable
- * e
- * Unknown variable
- * <p>
- * Handle as many incorrect inputs as possible. The program must never throw the NumberFormatException or any other exception.
- * It is important to note, all variables must store their values between calculations of different expressions.
- * <p>
- * Input/Output example
- * a = 3
- * b = 4
- * c = 5
- * a + b - c
- * 2
- * b - c + 4 - a
- * 0
- * a = 800
- * a + b + c
- * 809
- * BIG = 9000
- * BIG
- * 9000
- * big
- * Unknown variable
- * /exit
- * Bye!
+ * 4 * (2 + 3
+ * Invalid expression
+ * -10
+ * -10
+ * a=4
+ * b=5
+ * c=6
+ * a*2+b*3+c*(2+3)
+ * 53
+ * 1 +++ 2 * 3 -- 4
+ * 11
+ * 3 *** 5
+ * Invalid expression
+ * 4+3)
+ * Invalid expression
+ *
  * The program should not stop until the user enters the /exit command.
+ *
+ * Note that a sequence of + (like +++ or +++++) is an admissible operator that
+ * should be interpreted as a single plus. A sequence of - (like -- or ---) is also an admissible
+ * operator and its meaning depends on the length.
+ *
+ * If a user enters a sequence of * or /, the program must print a message that the expression is invalid.
  */
 
 interface SmartCalculator {
